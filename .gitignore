@@ -13,6 +13,9 @@
 # Icon must end with two \r
 Icon
 
+#ignore 360 video folder and animations folder
+360video
+Exe3/animations
 
 # Thumbnails
 ._*
