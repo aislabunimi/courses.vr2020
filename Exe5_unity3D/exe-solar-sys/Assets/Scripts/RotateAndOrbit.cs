@@ -28,12 +28,13 @@ public class RotateAndOrbit : MonoBehaviour
     }
 
 
-    public void StartMovement(Vector3 startingPoint, float rotationSpeed, float scale)
+    public void StartMovement(Vector3 startingPoint, float rotationSpeed, float scaleRadius)
     {
         Transform me = transform;
         me.position = startingPoint;
-        me.localScale *= scale;
+        me.localScale *= scaleRadius;
         _rotationSpeed = rotationSpeed;
+        startMovement = true;
     }
         
 }
