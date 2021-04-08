@@ -61,8 +61,15 @@ public class SetupScene : MonoBehaviour
 
     public void ActivateRotation()
     {
-        mercuryGO.startMovement(_conversionHelper.ConvertPositionToSI((_mercury.initialPosition)) * scale,_mercury.rotationRate, _mercury.scale);
- 
+        mercuryGO.StartMovement(_conversionHelper.ConvertPositionToSI((_mercury.initialPosition)) * scale,_mercury.rotationRate, _mercury.scale);
+        venusGO.StartMovement(_conversionHelper.ConvertPositionToSI(_venus.initialPosition)*scale,  _venus.rotationRate, _venus.scale);
+        earthGO.StartMovement(_conversionHelper.ConvertPositionToSI(_earth.initialPosition)*scale,  _earth.rotationRate, _earth.scale);
+//        moonGO.StartMovement(_conversionHelper.ConvertPositionToSI(_moon.initialPosition)*moonScale,  _moon.angle, _moon.rotationRate, _moon.scale);
+        marsGO.StartMovement(_conversionHelper.ConvertPositionToSI(_mars.initialPosition)*scale, _mars.rotationRate, _mars.scale);
+        jupiterGO.StartMovement(_conversionHelper.ConvertPositionToSI(_jupiter.initialPosition)*scale,   _jupiter.rotationRate, _jupiter.scale);
+        saturnGO.StartMovement(_conversionHelper.ConvertPositionToSI(_saturn.initialPosition)*scale,   _saturn.rotationRate, _saturn.scale);
+        uranusGO.StartMovement(_conversionHelper.ConvertPositionToSI(_uranus.initialPosition)*scale,  _uranus.rotationRate, _uranus.scale);
+        neptuneGO.StartMovement(_conversionHelper.ConvertPositionToSI(_neptune.initialPosition)*scale,   _neptune.rotationRate, _neptune.scale);
     }
 
 
