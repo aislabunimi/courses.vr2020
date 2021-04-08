@@ -20,12 +20,41 @@ public class CameraDragMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        me = GetComponent<Camera>();
+        cameraOriginalPos = transform.position;
+
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
+        Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         
+       if (Input.GetMouseButtonDown(0))
+       {
+                dragOrigin = Input.mousePosition;
+                return;
+        }
+
+        if (!Input.GetMouseButton(0)) return;
+
+        Vector3 pos = me.ScreenToViewportPoint(dragOrigin - Input.mousePosition);
+        Vector3 move = new Vector3(pos.x * dragSpeed, pos.y * dragSpeed, 0);
+
+        transform.Translate(move, Space.World);
+        
+        
+
+    }
+
+
+    public void Zoom(float f)
+    {
+        transform.Translate(0, 0, f);
+    }
+
+    public void Reset()
+    {
+        transform.position = cameraOriginalPos;
     }
 }
