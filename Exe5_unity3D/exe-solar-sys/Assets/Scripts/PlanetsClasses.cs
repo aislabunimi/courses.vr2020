@@ -2,6 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ *The data are taken from Vectors Ephemeris Type https://ssd.jpl.nasa.gov/horizons.cgi#top
+* 
+ *   X    X-component of position vector (au)
+ *   Y    Y-component of position vector (au)
+ *   Z    Z-component of position vector (au)
+ *   VX    X-component of velocity vector (au/day)                  
+ *   VY    Y-component of velocity vector (au/day)                  
+ *   VZ    Z-component of velocity vector (au/day)
+ *
+ *  axial tilt "angle" is expressed as rad
+ *
+ * 2459310.500000000 = A.D. 2021-Apr-06 00:00:00.0000 TDB
+ * Time span: Start=2021-04-06, Stop=2021-04-07, Step=1 d
+ */
+/*
+ * the components of the Vector3
+ * should be converted from Astronomical units to metric SI system
+ * https://en.wikipedia.org/wiki/Astronomical_unit
+ * 1 AU = 1.495978707×10^11
+ */
+
+public class AUConversionHelper
+{
+
+ public Vector3 ConvertPositionToSI(Vector3 v)
+ {
+  Vector3 tmp = v * (1.495978707E+11f);
+  return tmp;
+ }
+
+ public Vector3 ConvertVelocityToSI(Vector3 v)
+ {
+  Vector3 tmp = v * (1.495978707E+11f / 86400);
+  return tmp;
+ }
+}
+
 public class Sun
 {
  public Vector3 initialPosition =

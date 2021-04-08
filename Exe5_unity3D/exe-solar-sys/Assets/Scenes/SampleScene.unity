@@ -810,5 +810,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: uranus
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 73da2d917660f4765a7fbc4eea04e683, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73da2d917660f4765a7fbc4eea04e683, type: 3}
