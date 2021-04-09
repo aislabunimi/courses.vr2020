@@ -146,6 +146,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.exesolarsys
+    Standalone: com.DefaultCompany.exe-solar-sys
     iPhone: com.DefaultCompany.exe-solar-sys
   buildNumber:
     Standalone: 0
