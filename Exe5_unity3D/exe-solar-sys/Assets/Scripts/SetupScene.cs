@@ -61,7 +61,7 @@ public class SetupScene : MonoBehaviour
 
     public void ActivateRotation()
     {
-        mercuryGO.StartMovement(_conversionHelper.ConvertPositionToSI((_mercury.initialPosition)) * 1E-15f,_mercury.rotationRate, _mercury.scale);
+        mercuryGO.StartMovement(_conversionHelper.ConvertPositionToSI((_mercury.initialPosition)) * 1E-11f,_mercury.rotationRate, _mercury.scale);
         venusGO.StartMovement(_conversionHelper.ConvertPositionToSI(_venus.initialPosition)*scale,  _venus.rotationRate, _venus.scale);
         earthGO.StartMovement(_conversionHelper.ConvertPositionToSI(_earth.initialPosition)*scale,  _earth.rotationRate, _earth.scale);
 //        moonGO.StartMovement(_conversionHelper.ConvertPositionToSI(_moon.initialPosition)*moonScale,  _moon.angle, _moon.rotationRate, _moon.scale);
