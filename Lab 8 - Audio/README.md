@@ -1,4 +1,4 @@
-# L10 : Spatial Audio
+# Spatial Audio
 
 **PREREQUISITES** : [Unity](https://unity.com/)
 
