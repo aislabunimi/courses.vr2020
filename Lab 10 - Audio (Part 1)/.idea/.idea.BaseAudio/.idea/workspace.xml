@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b53d7920-d5f8-4eff-a1e5-e6fd7cf7bf79" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AuZdioSettingsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AuZdioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TargetManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GameMusicManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/GenericSoundManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioSettingsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullets/Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Bullets/ExplodingBullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CanvasManager.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1skT9H1XJ3QGSrjHLxAQgd964m8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
